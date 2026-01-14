@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "WebSearch",
+      "WebFetch(domain:orm.drizzle.team)",
+      "Bash(ls:*)",
+      "Bash(test:*)",
+      "Bash(pnpm --version:*)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm --filter web build:*)",
+      "Bash(timeout 5 pnpm:*)",
+      "Bash(pnpm view:*)",
+      "Bash(cat:*)",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm lint:*)",
+      "Bash(pnpm format:*)",
+      "Bash(pnpm typecheck:*)",
+      "Bash(pnpm --filter shared build:*)",
+      "Bash(pnpm dev:api:*)",
+      "Bash(lsof:*)"
+    ]
+  }
+}

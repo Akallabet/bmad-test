@@ -1,0 +1,27 @@
+{
+  "name": "todo-bmad-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Simple To-Do App demonstrating BMAD Method with AI-assisted development",
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "pnpm --filter api start",
+    "stop:api": "pkill -f 'tsx.*api/src/index.ts' || true",
+    "stop:web": "pkill -f 'vite.*packages/web' || true",
+    "build:web": "pnpm --filter web build",
+    "build:api": "pnpm --filter api build",
+    "lint": "eslint packages/**/*.ts packages/**/*.tsx",
+    "format": "prettier --write \"packages/**/*.{ts,tsx,json,css}\"",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^9.18.0",
+    "globals": "^17.0.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}
