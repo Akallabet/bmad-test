@@ -6,8 +6,10 @@ export {
   TaskSchema,
   CreateTaskInputSchema,
   UpdateTaskInputSchema,
+  ReorderTasksInputSchema,
   type CreateTaskInput,
   type UpdateTaskInput,
+  type ReorderTasksInput,
 } from './schemas/task.schema';
 
 // Constants
